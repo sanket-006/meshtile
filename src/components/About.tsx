@@ -13,7 +13,7 @@ const About = () => {
     {
       category: 'Backend',
       icon: <Code className="h-6 w-6" />,
-      technologies: ['PHP', 'Node.js', 'Express.js'],
+      technologies: ['PHP', 'Node.js', 'Express.js', 'Python'],
       color: 'from-green-500 to-emerald-500'
     },
     {
