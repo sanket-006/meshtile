@@ -26,42 +26,12 @@ const Projects = () => {
       liveUrl: '#'
     },
     {
-      title: 'Petrol Pump Management',
-      description: 'Multi-role management system for petrol pumps with comprehensive sales tracking, expense management, and role-based access control.',
-      technologies: ['PHP', 'MySQL', 'Bootstrap', 'jQuery'],
-      icon: <Database className="h-6 w-6" />,
-      color: 'from-purple-500 to-violet-500',
-      features: ['Sales Management', 'Expense Tracking', 'Multi-user Roles', 'Reports Generation'],
-      githubUrl: '#',
-      liveUrl: '#'
-    },
-    {
       title: 'Expense Tracker CLI',
       description: 'Python-based command-line expense tracking tool with SQLite database integration and matplotlib data visualization.',
       technologies: ['Python', 'SQLite', 'Matplotlib', 'CLI'],
       icon: <Database className="h-6 w-6" />,
       color: 'from-orange-500 to-red-500',
       features: ['CLI Interface', 'Data Visualization', 'SQLite Storage', 'Expense Analytics'],
-      githubUrl: '#',
-      liveUrl: '#'
-    },
-    {
-      title: 'Nashik Travel Planner',
-      description: 'React+Vite travel planning application with interactive maps, user authentication, and comprehensive trip planning features.',
-      technologies: ['React', 'Vite', 'Maps API', 'Firebase'],
-      icon: <Map className="h-6 w-6" />,
-      color: 'from-teal-500 to-blue-500',
-      features: ['Interactive Maps', 'Trip Planning', 'User Auth', 'Location Search'],
-      githubUrl: '#',
-      liveUrl: '#'
-    },
-    {
-      title: 'LinkedIn Automation Extension',
-      description: 'Chrome extension built with React to automate LinkedIn connection requests with smart targeting and personalized messaging.',
-      technologies: ['React', 'Chrome API', 'JavaScript', 'CSS'],
-      icon: <Chrome className="h-6 w-6" />,
-      color: 'from-indigo-500 to-purple-500',
-      features: ['Auto Connections', 'Message Templates', 'Smart Targeting', 'Analytics'],
       githubUrl: '#',
       liveUrl: '#'
     }
