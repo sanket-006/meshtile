@@ -17,8 +17,23 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center section-padding bg-gradient-to-br from-background to-background-secondary">
-      <div className="container-width">
+    <section id="home" className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden">
+      {/* Background Video */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/your-video.mp4" type="video/mp4" />
+        <source src="/your-video.webm" type="video/webm" />
+      </video>
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-background/60 backdrop-blur-sm z-10"></div>
+      
+      <div className="container-width relative z-20">
         <div className="text-center space-y-8">
           {/* Hero Content */}
           <div className="space-y-6">
@@ -41,22 +56,6 @@ const Hero = () => {
               Final-year Computer Science student with a passion for building meaningful digital solutions. 
               Focused on web development, data engineering, and storytelling through creative content.
             </p>
-          </div>
-
-          {/* Video Section */}
-          <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong bg-card">
-              <video 
-                className="w-full h-auto"
-                controls
-                poster="/placeholder.svg"
-                preload="metadata"
-              >
-                <source src="/your-video.mp4" type="video/mp4" />
-                <source src="/your-video.webm" type="video/webm" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
           </div>
 
           {/* CTA Buttons */}
