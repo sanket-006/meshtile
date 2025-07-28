@@ -43,6 +43,22 @@ const Hero = () => {
             </p>
           </div>
 
+          {/* Video Section */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-strong bg-card">
+              <video 
+                className="w-full h-auto"
+                controls
+                poster="/placeholder.svg"
+                preload="metadata"
+              >
+                <source src="/your-video.mp4" type="video/mp4" />
+                <source src="/your-video.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
