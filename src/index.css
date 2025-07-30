@@ -2,91 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Portfolio Design System - Light Blue Theme */
+/* Modern Portfolio Design System - Dark Mode Only */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    /* Background colors - Light gray instead of pure white */
-    --background: 210 14% 97%;
-    --background-secondary: 210 20% 96%;
-    --foreground: 0 0% 12%;
-
-    /* Card colors */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 12%;
-
-    /* Stronger blue primary palette */
-    --primary: 213 94% 68%;
-    --primary-light: 213 94% 75%;
-    --primary-dark: 213 94% 55%;
-    --primary-foreground: 0 0% 100%;
-
-    /* Secondary colors */
-    --secondary: 210 25% 92%;
-    --secondary-foreground: 220 9% 46%;
-
-    /* Accent colors */
-    --accent: 210 100% 95%;
-    --accent-foreground: 213 94% 55%;
-
-    /* Muted colors */
-    --muted: 210 20% 94%;
-    --muted-foreground: 220 9% 46%;
-
-    /* Borders and inputs */
-    --border: 210 20% 88%;
-    --input: 210 20% 90%;
-    --ring: 210 85% 58%;
-
-    /* Success, warning, error */
-    --success: 145 65% 50%;
-    --warning: 40 95% 55%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    /* Gradients - Updated with stronger blue */
-    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 94% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(213 94% 68%), hsl(220 94% 70%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 14% 97%));
-    --gradient-background: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 14% 97%));
-
-    /* Enhanced shadows with stronger blue */
-    --shadow-soft: 0 4px 12px hsl(213 50% 85% / 0.2);
-    --shadow-medium: 0 8px 24px hsl(213 50% 80% / 0.25);
-    --shadow-strong: 0 16px 32px hsl(213 50% 75% / 0.3);
-    --shadow-glow: 0 0 32px hsl(213 94% 68% / 0.4);
-    --shadow-button: 0 4px 16px hsl(213 94% 68% / 0.25);
-
-    /* Spacing and sizing */
-    --radius: 0.75rem;
-    --radius-lg: 1rem;
-    --radius-xl: 1.5rem;
-
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
     /* Dark backgrounds - using greys instead of whites */
     --background: 222.2 84% 4.9%;
     --background-secondary: 217.2 32.6% 8%;
@@ -140,6 +60,16 @@
     --shadow-medium: 0 8px 24px hsl(0 0% 0% / 0.4);
     --shadow-strong: 0 16px 32px hsl(0 0% 0% / 0.5);
     --shadow-glow: 0 0 32px hsl(0 84% 60% / 0.4);
+    --shadow-button: 0 4px 16px hsl(0 84% 60% / 0.25);
+
+    /* Spacing and sizing */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     /* Sidebar colors - greys and red accents */
     --sidebar-background: 217.2 32.6% 6%;

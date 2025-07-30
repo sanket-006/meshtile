@@ -31,22 +31,22 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: 'Email',
-      value: 'sanket.nikam@example.com',
-      link: 'mailto:sanket.nikam@example.com',
+      value: 'sanketn317@gmail.com',
+      link: 'mailto:sanketn317@gmail.com',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       title: 'LinkedIn',
-      value: 'linkedin.com/in/sanket-nikam',
-      link: 'https://linkedin.com/in/sanket-nikam',
+      value: 'linkedin.com/in/sanket-nikam-65690b190',
+      link: 'https://www.linkedin.com/in/sanket-nikam-65690b190/',
       color: 'from-blue-600 to-blue-800'
     },
     {
       icon: <Github className="h-6 w-6" />,
       title: 'GitHub',
-      value: 'github.com/sanket-nikam',
-      link: 'https://github.com/sanket-nikam',
+      value: 'github.com/Sanket-nikam06',
+      link: 'https://github.com/Sanket-nikam06',
       color: 'from-gray-600 to-gray-800'
     },
     {
