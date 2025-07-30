@@ -7,32 +7,32 @@
 
 @layer base {
   :root {
-    /* Background colors */
-    --background: 220 15% 98%;
+    /* Background colors - Light gray instead of pure white */
+    --background: 210 14% 97%;
     --background-secondary: 210 20% 96%;
-    --foreground: 215 25% 15%;
+    --foreground: 0 0% 12%;
 
     /* Card colors */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 0 0% 12%;
 
-    /* Light blue primary palette */
-    --primary: 210 85% 58%;
-    --primary-light: 210 85% 70%;
-    --primary-dark: 210 85% 45%;
+    /* Stronger blue primary palette */
+    --primary: 213 94% 68%;
+    --primary-light: 213 94% 75%;
+    --primary-dark: 213 94% 55%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary colors */
     --secondary: 210 25% 92%;
-    --secondary-foreground: 215 25% 20%;
+    --secondary-foreground: 220 9% 46%;
 
     /* Accent colors */
     --accent: 210 100% 95%;
-    --accent-foreground: 210 85% 45%;
+    --accent-foreground: 213 94% 55%;
 
     /* Muted colors */
     --muted: 210 20% 94%;
-    --muted-foreground: 215 15% 45%;
+    --muted-foreground: 220 9% 46%;
 
     /* Borders and inputs */
     --border: 210 20% 88%;
@@ -45,16 +45,18 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 85% 58%), hsl(210 85% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 85% 58%), hsl(220 85% 65%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    /* Gradients - Updated with stronger blue */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 94% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 68%), hsl(220 94% 70%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 14% 97%));
+    --gradient-background: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 14% 97%));
 
-    /* Shadows */
-    --shadow-soft: 0 4px 12px hsl(210 15% 80% / 0.15);
-    --shadow-medium: 0 8px 24px hsl(210 15% 70% / 0.2);
-    --shadow-strong: 0 16px 32px hsl(210 15% 60% / 0.25);
-    --shadow-glow: 0 0 32px hsl(210 85% 58% / 0.3);
+    /* Enhanced shadows with stronger blue */
+    --shadow-soft: 0 4px 12px hsl(213 50% 85% / 0.2);
+    --shadow-medium: 0 8px 24px hsl(213 50% 80% / 0.25);
+    --shadow-strong: 0 16px 32px hsl(213 50% 75% / 0.3);
+    --shadow-glow: 0 0 32px hsl(213 94% 68% / 0.4);
+    --shadow-button: 0 4px 16px hsl(213 94% 68% / 0.25);
 
     /* Spacing and sizing */
     --radius: 0.75rem;
