@@ -16,6 +16,15 @@ const Hero = () => {
     }
   };
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Sanket_Nikam_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Background Video */}
@@ -72,6 +81,7 @@ const Hero = () => {
             
             <Button 
               variant="outline" 
+              onClick={downloadResume}
               className="px-8 py-3 text-lg border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               <Download className="mr-2 h-5 w-5" />
@@ -82,14 +92,14 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-8">
             <a 
-              href="mailto:sanket@example.com"
+              href="mailto:sanketn317@gmail.com"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all duration-300 card-hover"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com/in/sanket-nikam"
+              href="https://www.linkedin.com/in/sanket-nikam-65690b190/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all duration-300 card-hover"
@@ -98,7 +108,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="https://github.com/sanket-nikam"
+              href="https://github.com/Sanket-nikam06"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all duration-300 card-hover"
