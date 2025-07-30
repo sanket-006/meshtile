@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden">
+    <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Background Video */}
       <video 
         className="absolute inset-0 w-full h-full object-cover z-0"
@@ -33,7 +33,9 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-background/60 backdrop-blur-sm z-10"></div>
       
-      <div className="container-width relative z-20">
+      {/* Content Container */}
+      <div className="absolute inset-0 z-20 flex items-center justify-center section-padding">
+        <div className="container-width relative z-20">
         <div className="text-center space-y-8">
           {/* Hero Content */}
           <div className="space-y-6">
@@ -112,6 +114,7 @@ const Hero = () => {
               <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
