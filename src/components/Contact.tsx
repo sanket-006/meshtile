@@ -3,7 +3,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/components/ui/use-toast';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,13 +13,47 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      // You need to replace these with your actual EmailJS credentials
+      // Get them from https://www.emailjs.com/
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: 'sanketn317@gmail.com', // Your email
+      };
+
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        templateParams,
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -186,9 +222,10 @@ const Contact = () => {
 
                   <Button 
                     type="submit"
+                    disabled={isSubmitting}
                     className="w-full btn-primary py-3 text-lg group"
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                     <Send className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </form>
